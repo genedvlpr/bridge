@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#1DE9B6</color>
+    <color name="colorPrimaryDark">#00BFA5</color>
+    <color name="colorAccent">#00BFA5</color>
+
+    <color name="vw_BgToolBar">#373B3E</color>
+    <color name="vw_BgRv">#191919</color>
+    <color name="vw_BgItem">#353535</color>
+
+    <color name="vw_ShadowItem">#94333232</color>
+
+    <color name="vw_BgRvFileDivider">#EEEEEE</color>
+
+    <color name="white">#fafafa</color>
+
+    <color name="teal_a100">#A7FFEB</color>
+    <color name="grey_800">#424242</color>
+    <color name="grey_900">#212121</color>
+</resources>

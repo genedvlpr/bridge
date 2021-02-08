@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".Home"
+    android:orientation="vertical"
+    tools:showIn="@layout/app_bar_main">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                app:cardCornerRadius="12dp">
+                <LinearLayout
+                    android:paddingTop="20dp"
+                    android:paddingBottom="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@mipmap/ic_icon_trans_250"
+                            android:layout_marginStart="-10dp"
+                            android:padding="20dp"/>
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_gravity="center_vertical"
+                            android:paddingEnd="30dp">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Bridge"
+                                android:textStyle="bold"
+                                android:textColor="@color/colorPrimary"
+                                android:textAppearance="@style/TextAppearance.MaterialComponents.Headline4"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@android:color/tertiary_text_light"
+                                android:text="Share your files with an ease."
+                                android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="12dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="20dp">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_gravity="center_vertical">
+                            <ImageView
+                                android:layout_width="36dp"
+                                android:layout_height="36dp"
+                                android:src="@drawable/ic_share_24px"
+                                android:layout_gravity="center_vertical"
+                                android:tint="@color/colorPrimary"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Send"
+                                android:textColor="@color/colorPrimary"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginStart="10dp"
+                                android:textStyle="bold"
+                                android:textAppearance="@style/TextAppearance.MaterialComponents.Headline5"/>
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:textColor="@android:color/tertiary_text_light"
+                            android:textAppearance="@style/TextAppearance.MaterialComponents.Body2"
+                            android:text="Share any file formats in one step, browse the files that you want to send. Client can  access the files with or without the Bridge app."/>
+                    </LinearLayout>
+
+                    <HorizontalScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="0dp"
+                            android:background="@android:color/transparent"
+                            android:orientation="horizontal"
+                            android:layout_marginBottom="10dp">
+
+                            <ImageButton
+                                android:layout_width="48dp"
+                                android:layout_height="48dp"
+                                android:background="@drawable/circle_receive_bg"
+                                android:clickable="true"
+                                android:cropToPadding="false"
+                                android:focusable="true"
+                                android:onClick="sendApps"
+                                android:paddingStart="10dp"
+                                android:paddingTop="10dp"
+                                android:paddingEnd="10dp"
+                                android:paddingBottom="15dp"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/ic_android"
+                                android:tint="@color/white" />
+
+                            <ImageButton
+                                android:layout_width="48dp"
+                                android:layout_height="48dp"
+                                android:layout_marginStart="10dp"
+                                android:background="@drawable/circle_receive_bg"
+                                android:clickable="true"
+                                android:cropToPadding="false"
+                                android:focusable="true"
+                                android:onClick="sendPhotos"
+                                android:padding="10dp"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/ic_google_photos"
+                                android:tint="@color/white" />
+
+                            <ImageButton
+                                android:layout_width="48dp"
+                                android:layout_height="48dp"
+                                android:layout_marginStart="10dp"
+                                android:background="@drawable/circle_receive_bg"
+                                android:clickable="true"
+                                android:cropToPadding="false"
+                                android:focusable="true"
+                                android:onClick="sendVideos"
+                                android:padding="10dp"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/ic_filmstrip"
+                                android:tint="@color/white" />
+
+                            <ImageButton
+                                android:layout_width="48dp"
+                                android:layout_height="48dp"
+                                android:layout_marginStart="10dp"
+                                android:background="@drawable/circle_receive_bg"
+                                android:clickable="true"
+                                android:cropToPadding="false"
+                                android:focusable="true"
+                                android:onClick="sendAudio"
+                                android:paddingStart="10dp"
+                                android:paddingEnd="10dp"
+                                android:paddingTop="12dp"
+                                android:paddingBottom="8dp"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/ic_headset_24px"
+                                android:tint="@color/white" />
+
+                            <ImageButton
+                                android:layout_width="48dp"
+                                android:layout_height="48dp"
+                                android:layout_marginStart="10dp"
+                                android:background="@drawable/circle_receive_bg"
+                                android:clickable="true"
+                                android:cropToPadding="false"
+                                android:focusable="true"
+                                android:onClick="sendDocs"
+                                android:padding="10dp"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/ic_file_check"
+                                android:tint="@color/white" />
+
+
+                        </LinearLayout>
+                    </HorizontalScrollView>
+
+                    <com.google.android.material.button.MaterialButton
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="15dp"
+                        android:layout_marginEnd="20dp"
+                        android:background="@drawable/circle_receive_bg"
+                        android:clickable="true"
+                        android:cropToPadding="false"
+                        style="@android:style/Widget.Material.Light.Button.Borderless"
+                        app:strokeWidth="3dp"
+                        app:strokeColor="@color/colorPrimary"
+                        app:backgroundTint="@color/white"
+                        android:textColor="@color/colorPrimary"
+                        android:text="All Files"
+                        app:rippleColor="@color/colorPrimary"
+                        android:focusable="true"
+                        app:icon="@drawable/ic_folder"
+                        app:iconTint="@color/colorPrimary"
+                        app:iconGravity="textStart"
+                        app:iconPadding="20dp"
+                        android:onClick="sendAllTypes" />
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="12dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="20dp">
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_gravity="center_vertical">
+                            <ImageView
+                                android:layout_width="36dp"
+                                android:layout_height="36dp"
+                                android:layout_gravity="center_vertical"
+                                android:src="@drawable/ic_save_alt_24px"
+                                android:tint="@color/colorPrimary"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Receive"
+                                android:textStyle="bold"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginStart="10dp"
+                                android:textColor="@color/colorPrimary"
+                                android:textAppearance="@style/TextAppearance.MaterialComponents.Headline5"/>
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:textColor="@android:color/tertiary_text_light"
+                            android:textAppearance="@style/TextAppearance.MaterialComponents.Body2"
+                            android:text="Receive files by connecting automatically to sender's wifi hotspot by scanning the BridgeWiFi QR Code created by the sender, you can use the app to download all the files or open the server in your browser."/>
+                    </LinearLayout>
+
+                    <com.google.android.material.button.MaterialButton
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Receive"
+                        app:rippleColor="@color/white"
+                        style="@android:style/Widget.Material.Light.Button.Borderless.Colored"
+                        android:elevation="0dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="-5dp"
+                        app:icon="@drawable/ic_qrcode_scan"
+                        app:iconGravity="textStart"
+                        app:iconPadding="20dp"
+                        android:textColor="@color/white"
+                        android:onClick="receiveFiles" />
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+        </LinearLayout>
+    </ScrollView>
+
+
+
+</LinearLayout>

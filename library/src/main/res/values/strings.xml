@@ -1,0 +1,86 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name" tools:ignore="MissingTranslation">Bridge</string>
+    <string name="receiver_title" tools:ignore="MissingTranslation">Receive Files</string>
+    <string name="send_title" tools:ignore="MissingTranslation">Send Files</string>
+
+    <string name="sender_data_on_warning" tools:ignore="MissingTranslation">It is highly recommend to close Mobile DATA, Receivers may be able to use mobile data.</string>
+
+    <string name="p2p_sender_system_settings_permission_prompt" tools:ignore="MissingTranslation">Allow app to read/write System settings. Necessary to create a Wifi Hotspot for Offline File Transfers</string>
+
+    <string name="p2p_label_transfer_files" tools:ignore="MissingTranslation">Transfer Files</string>
+    <string name="p2p_label_receive_files" tools:ignore="MissingTranslation">Receive Files</string>
+    <string name="p2p_connect_to_diff_sender" tools:ignore="MissingTranslation"><u>Click here to connect to a different Sender</u></string>
+    <string name="p2p_receiver_oreo_msg" formatted="false" tools:ignore="MissingTranslation">Found a SENDER with SSID: %s. \nPlease click on Settings to Open Wifi Listings and connect to above SSID along with Password shared by Sender.</string>
+    <string name="p2p_receiver_files_header" tools:ignore="MissingTranslation">Files available to download</string>
+    <string name="p2p_receiver_scanning_hint" tools:ignore="MissingTranslation">Scanning for a SHAREthem Hotspot&#8230;</string>
+    <string name="p2p_receiver_connecting_hint" tools:ignore="MissingTranslation">Connecting to %s Hotspot&#8230;</string>
+    <string name="p2p_receiver_error_in_connecting" tools:ignore="MissingTranslation">Failed to connect with %s Hotspot. Retrying again..</string>
+    <string name="p2p_receiver_connected_hint" formatted="false" tools:ignore="MissingTranslation">Connected to %s</string>
+    <string name="p2p_receiver_connect_timeout_error" tools:ignore="MissingTranslation">Could not connect to Bridge Hotspot. Please go to Wifi settings and chose %s to start video transfer from Sender.</string>
+    <string name="p2p_receiver_close_warning" tools:ignore="MissingTranslation">Do you want to turn-off Receiver mode?</string>
+    <string name="p2p_receiver_gps_permission_warning" tools:ignore="MissingTranslation">Without Location(GPS) permission Bridge app is unable to Receive videos offline from Senders. Are you sure to deny this permission?</string>
+    <string name="p2p_receiver_gps_no_permission_prompt" tools:ignore="MissingTranslation">Please enable Location(GPS) permission to proceed with receiving Spuul videos Offline.\nPress Settings button and goto Permissions section to grant LOCATION PERMISSION(GPS)</string>
+    <string name="p2p_receiver_error_sender_disconnected" tools:ignore="MissingTranslation">Sender Hotspot disconnected. retrying..</string>
+
+    <string name="p2p_sender_hint_wifi_connected" formatted="false" tools:ignore="MissingTranslation">Open Receiver App in \'Receiver mode\' to connect to the Bridge WiFi Hotspot. \n\n(OR)\n\nOpen WiFi settings and connect to: \nSSID: %s\nPassword: %s\n\nAnd then enter below URL \ninto browser\'s address bar:\n%s</string>
+    <string name="p2p_sender_subtitle" tools:ignore="MissingTranslation">Hotspot successfully initialized</string>
+
+    <string name="p2p_sender_service_notification_header" tools:ignore="MissingTranslation">Bridge Wifi Hotspot Enabled</string>
+    <string name="p2p_sender_service_init_notification_header" tools:ignore="MissingTranslation">Initiating Bridge Hotspot&#8230;</string>
+    <string name="p2p_sender_hint_connecting" tools:ignore="MissingTranslation">Initializing Wifi Hotspot&#8230;</string>
+    <string name="p2p_sender_close_warning" tools:ignore="MissingTranslation">Do you want to stop sharing files?</string>
+    <string name="p2p_sender_shared_list_label" tools:ignore="MissingTranslation"><u>Shared files: </u></string>
+
+    <string name="p2p_sender_hint_text" tools:ignore="MissingTranslation">Turn ON \'Send Files\' to start File Sharing</string>
+    <string name="p2p_receiver_hint_text" tools:ignore="MissingTranslation">Turn ON \'Receive Files\' to receive files from Sender</string>
+
+    <string name="Action_Ok" tools:ignore="MissingTranslation">OK</string>
+    <string name="Action_cancel" tools:ignore="MissingTranslation">Cancel</string>
+
+    <string name="label_settings" tools:ignore="MissingTranslation">Settings</string>
+    <string name="label_thats_ok" tools:ignore="MissingTranslation">That\'s OK</string>
+    <string name="label_dont_ask" tools:ignore="MissingTranslation">Don\'t ask again</string>
+
+    <string name="navigation_drawer_open" tools:ignore="MissingTranslation">Open navigation drawer</string>
+    <string name="navigation_drawer_close" tools:ignore="MissingTranslation">Close navigation drawer</string>
+
+
+    <!-- Button texts for different actions -->
+    <string name="button_ok" tools:ignore="MissingTranslation">OK</string>
+    <string name="button_web_search" tools:ignore="MissingTranslation">Search</string>
+    <string name="button_share_by_email" tools:ignore="MissingTranslation">Share via E-Mail</string>
+    <string name="button_share_by_sms" tools:ignore="MissingTranslation">Share via SMS</string>
+    <string name="button_add_contact" tools:ignore="MissingTranslation">Add contact</string>
+    <string name="button_show_map" tools:ignore="MissingTranslation">Show map</string>
+    <string name="button_dial" tools:ignore="MissingTranslation">Dial</string>
+    <string name="button_email" tools:ignore="MissingTranslation">Send E-Mail</string>
+    <string name="button_add_calendar" tools:ignore="MissingTranslation">Add calendar</string>
+    <string name="button_wifi" tools:ignore="MissingTranslation">Connect to network</string>
+    <string name="button_open_browser" tools:ignore="MissingTranslation">Browse</string>
+    <string name="button_sms" tools:ignore="MissingTranslation">Send SMS</string>
+    <string name="button_mms" tools:ignore="MissingTranslation">Send MMS</string>
+    <string name="button_copy_text" tools:ignore="MissingTranslation">copy</string>
+    <string name="button_share_text" tools:ignore="MissingTranslation">share</string>
+
+
+    <!-- Result titles -->
+    <string name="result_text" tools:ignore="MissingTranslation">Text</string>
+    <string name="result_calendar" tools:ignore="MissingTranslation">Calendar</string>
+    <string name="result_address_book" tools:ignore="MissingTranslation">Contact</string>
+    <string name="result_email_address" tools:ignore="MissingTranslation">E-Mail</string>
+    <string name="result_geo" tools:ignore="MissingTranslation">Geolocation</string>
+    <string name="result_wifi" tools:ignore="MissingTranslation">WiFi</string>
+    <string name="result_uri" tools:ignore="MissingTranslation">URL</string>
+    <string name="result_tel" tools:ignore="MissingTranslation">Telephone</string>
+    <string name="result_sms" tools:ignore="MissingTranslation">SMS</string>
+
+
+    <!-- Other stuff -->
+    <string name="wifi_changing_network" tools:ignore="MissingTranslation">Connecting</string>
+    <string name="msg_intent_failed" tools:ignore="MissingTranslation">Something went wrong</string>
+    <string name="msg_default_mms_subject" tools:ignore="MissingTranslation">(no subject)</string>
+    <string name="scan_fragment_tittle" tools:ignore="MissingTranslation">Scan</string>
+    <string name="history_fragment_tittle" tools:ignore="MissingTranslation">History</string>
+    <string name="title_activity_download_files" translatable="false">DownloadFiles</string>
+
+</resources>

@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "568028763156",
+    "firebase_url": "https://bridge-d2575.firebaseio.com",
+    "project_id": "bridge-d2575",
+    "storage_bucket": "bridge-d2575.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:568028763156:android:74f65855aa0b5a9b0b8301",
+        "android_client_info": {
+          "package_name": "com.genedev.bridge"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "568028763156-irtnc4it9dakvcgabff234rfptg9dj20.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.genedev.bridge",
+            "certificate_hash": "93a7af5f9970e1ef3dfa42a0b65b7fb6e500101b"
+          }
+        },
+        {
+          "client_id": "568028763156-n4p4qol2d4matfhda5mg3hs0i1u8krdn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB04f3zS2a0VJTIcZrDO3LtKH9EcTPMI5E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "568028763156-n4p4qol2d4matfhda5mg3hs0i1u8krdn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

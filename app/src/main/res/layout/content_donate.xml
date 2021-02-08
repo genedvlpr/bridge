@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".Donate"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:showIn="@layout/activity_donate">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/tertiary_text_light"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6"
+        android:text="Donate to the developer by clicking these ads."/>
+
+    <RelativeLayout
+        android:id="@+id/ln_ad_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp" >
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_play_rewarded"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerVertical="false"
+            android:text="Play Video"
+            app:strokeColor="@color/colorPrimary"
+            app:strokeWidth="3dp" />
+        <com.google.android.gms.ads.AdView
+            xmlns:ads="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/adView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/btn_play_rewarded"
+            ads:adSize="BANNER"
+            ads:adUnitId="ca-app-pub-3113729740390193/2215093781">
+        </com.google.android.gms.ads.AdView>
+    </RelativeLayout>
+</LinearLayout>

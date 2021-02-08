@@ -1,0 +1,83 @@
+apply plugin: 'com.android.application'
+android {
+    compileSdkVersion 28
+
+    def versionPropsFile = file('version.properties')
+
+    if (versionPropsFile.canRead()) {
+        def Properties versionProps = new Properties()
+
+        versionProps.load(new FileInputStream(versionPropsFile))
+        def value = 0
+        def runTasks = gradle.startParameter.taskNames
+        if ('assemble' in runTasks || 'assembleRelease' in runTasks || 'aR' in runTasks) {
+            value = 1;
+        }
+
+        def versionMajor = 2
+        def versionMinor = 2
+        def versionPatch = versionProps['VERSION_PATCH'].toInteger() + value
+        def versionBuild = versionProps['VERSION_BUILD'].toInteger() + 1
+        def version_Code = versionProps['VERSION_CODE'].toInteger() + value
+
+        versionProps['VERSION_PATCH'] = versionPatch.toString()
+        versionProps['VERSION_BUILD'] = versionBuild.toString()
+        versionProps['VERSION_CODE'] = version_Code.toString()
+
+        versionProps.store(versionPropsFile.newWriter(), null)
+
+        defaultConfig {
+            versionCode version_Code
+            versionName "${versionMajor}.${versionMinor}.${versionPatch} (${versionBuild})"
+            minSdkVersion 23
+            targetSdkVersion 28
+
+            testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        }
+    } else {
+        throw new GradleException("Could not read version.properties!")
+    }
+
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility 1.8
+        targetCompatibility 1.8
+    }
+
+}
+repositories {
+    mavenCentral()
+}
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    //implementation 'com.github.angads25:filepicker:1.0.6'
+
+    //noinspection GradleCompatible
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    testImplementation 'junit:junit:4.12'
+    //noinspection GradleCompatible
+    implementation 'androidx.appcompat:appcompat:1.1.0'
+    //noinspection GradleCompatible
+    implementation 'com.google.android.material:material:1.1.0'
+    //implementation 'com.vincent.filepicker:MultiTypeFilePicker:1.0.8'
+    implementation project(':library')
+    implementation project(path: ':filepicker')
+    //implementation 'com.koushikdutta.ion:ion:3.0.8'
+    implementation project(path: ':filemanager')
+    //implementation "com.droidninja:filepicker:2.2.1"
+    implementation 'com.google.firebase:firebase-analytics:17.2.3'
+    implementation 'com.google.firebase:firebase-core:17.2.3'
+    implementation 'com.google.firebase:firebase-ads:19.0.0'
+
+    implementation 'com.tappx.sdk.android:tappx-sdk:3.1.7'
+    implementation 'com.google.android.gms:play-services-base:17.1.0'
+    implementation 'com.google.android.gms:play-services-ads:19.0.0'
+}
+
+apply plugin: 'com.google.gms.google-services'

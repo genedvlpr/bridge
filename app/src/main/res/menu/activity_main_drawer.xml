@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_donate"
+            android:icon="@drawable/ic_gift_outline"
+            android:title="Donate" />
+        <item
+            android:id="@+id/nav_info"
+            android:icon="@drawable/ic_information"
+            android:title="About" />
+    </group>
+
+    <item android:title="Preference">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_share"
+                android:title="Share" />
+            <item
+                android:id="@+id/nav_exit"
+                android:icon="@drawable/ic_exit_to_app"
+                android:title="Exit" />
+        </menu>
+    </item>
+
+</menu>

@@ -1,0 +1,1 @@
+include ':library', ':app', ':zxing-android-embedded', ':filepicker', ':filemanager'

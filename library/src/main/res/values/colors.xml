@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#1DE9B6</color>
+    <color name="colorPrimaryLight">#F5F5F5</color>
+    <color name="colorPrimary_pressed">#00BFA5</color>
+    <color name="colorPrimaryDark">#00BFA5</color>
+    <color name="colorAccent">#00BFA5</color>
+    <color name="colorAccent_pressed">#00BFA5</color>
+
+    <color name="rippleColor">#00BFA5</color>
+
+    <color name="alert_color_accent">#00BFA5</color>
+
+    <color name="white">#FAFAFA</color>
+
+    <color name="active">#00E676</color>
+    <color name="warn">#F9A825</color>
+
+    <color name="teal_a100">#A7FFEB</color>
+    <color name="grey_800">#424242</color>
+    <color name="grey_900">#212121</color>
+</resources>
