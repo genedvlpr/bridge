@@ -3,7 +3,7 @@ File Sharing App for Android.
 
 ### License
 ```
-   Copyright (C) 2018 Gene Diether Rodriguez
+   Copyright (C) 2020 Gene Diether Rodriguez
 
    Licensed under the Apache License, Version 2.0 (the "License");
    you may not use this file except in compliance with the License.
